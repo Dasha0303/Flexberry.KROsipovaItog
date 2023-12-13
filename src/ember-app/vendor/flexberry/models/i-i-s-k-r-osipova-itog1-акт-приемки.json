@@ -1,0 +1,71 @@
+﻿{
+  "name": "IISKROsipovaItog1АктПриемки",
+  "modelName": "i-i-s-k-r-osipova-itog1-акт-приемки",
+  "className": "АктПриемки",
+  "nameSpace": "IIS.KROsipovaItog1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПриемки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерАкта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-k-r-osipova-itog1-сотрудники",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тН",
+      "relatedTo": "i-i-s-k-r-osipova-itog1-т-н",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧАктаПриемки",
+      "relatedTo": "i-i-s-k-r-osipova-itog1-т-ч-акта-приемки",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АктПриемкиE",
+      "modelName": "i-i-s-k-r-osipova-itog1-акт-приемки",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "АктПриемкиL",
+      "modelName": "i-i-s-k-r-osipova-itog1-акт-приемки",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

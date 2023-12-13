@@ -8,6 +8,13 @@ import IISKROsipovaItogСкладLForm from './forms/i-i-s-k-r-osipova-itog-ск
 import IISKROsipovaItogСотрудникиLForm from './forms/i-i-s-k-r-osipova-itog-сотрудники-l';
 import IISKROsipovaItogТНLForm from './forms/i-i-s-k-r-osipova-itog-т-н-l';
 import IISKROsipovaItogТЧАктаПриемкиLForm from './forms/i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l';
+import IISKROsipovaItog1АктПриемкиLForm from './forms/i-i-s-k-r-osipova-itog1-акт-приемки-l';
+import IISKROsipovaItog1ЗаказLForm from './forms/i-i-s-k-r-osipova-itog1-заказ-l';
+import IISKROsipovaItog1ОтпускМатериалаLForm from './forms/i-i-s-k-r-osipova-itog1-отпуск-материала-l';
+import IISKROsipovaItog1СкладLForm from './forms/i-i-s-k-r-osipova-itog1-склад-l';
+import IISKROsipovaItog1СотрудникиLForm from './forms/i-i-s-k-r-osipova-itog1-сотрудники-l';
+import IISKROsipovaItog1ТНLForm from './forms/i-i-s-k-r-osipova-itog1-т-н-l';
+import IISKROsipovaItog1ТЧАктаПриемкиLForm from './forms/i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l';
 import IISKROsipovaItogАктПриемкиEForm from './forms/i-i-s-k-r-osipova-itog-акт-приемки-e';
 import IISKROsipovaItogЗаказEForm from './forms/i-i-s-k-r-osipova-itog-заказ-e';
 import IISKROsipovaItogОтпускМатериалаEForm from './forms/i-i-s-k-r-osipova-itog-отпуск-материала-e';
@@ -15,6 +22,13 @@ import IISKROsipovaItogСкладEForm from './forms/i-i-s-k-r-osipova-itog-ск
 import IISKROsipovaItogСотрудникиEForm from './forms/i-i-s-k-r-osipova-itog-сотрудники-e';
 import IISKROsipovaItogТНEForm from './forms/i-i-s-k-r-osipova-itog-т-н-e';
 import IISKROsipovaItogТЧАктаПриемкиEForm from './forms/i-i-s-k-r-osipova-itog-т-ч-акта-приемки-e';
+import IISKROsipovaItog1АктПриемкиEForm from './forms/i-i-s-k-r-osipova-itog1-акт-приемки-e';
+import IISKROsipovaItog1ЗаказEForm from './forms/i-i-s-k-r-osipova-itog1-заказ-e';
+import IISKROsipovaItog1ОтпускМатериалаEForm from './forms/i-i-s-k-r-osipova-itog1-отпуск-материала-e';
+import IISKROsipovaItog1СкладEForm from './forms/i-i-s-k-r-osipova-itog1-склад-e';
+import IISKROsipovaItog1СотрудникиEForm from './forms/i-i-s-k-r-osipova-itog1-сотрудники-e';
+import IISKROsipovaItog1ТНEForm from './forms/i-i-s-k-r-osipova-itog1-т-н-e';
+import IISKROsipovaItog1ТЧАктаПриемкиEForm from './forms/i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-e';
 import IISKROsipovaItogАктПриемкиModel from './models/i-i-s-k-r-osipova-itog-акт-приемки';
 import IISKROsipovaItogЗаказModel from './models/i-i-s-k-r-osipova-itog-заказ';
 import IISKROsipovaItogОтпускМатериалаModel from './models/i-i-s-k-r-osipova-itog-отпуск-материала';
@@ -22,6 +36,13 @@ import IISKROsipovaItogСкладModel from './models/i-i-s-k-r-osipova-itog-с�
 import IISKROsipovaItogСотрудникиModel from './models/i-i-s-k-r-osipova-itog-сотрудники';
 import IISKROsipovaItogТНModel from './models/i-i-s-k-r-osipova-itog-т-н';
 import IISKROsipovaItogТЧАктаПриемкиModel from './models/i-i-s-k-r-osipova-itog-т-ч-акта-приемки';
+import IISKROsipovaItog1АктПриемкиModel from './models/i-i-s-k-r-osipova-itog1-акт-приемки';
+import IISKROsipovaItog1ЗаказModel from './models/i-i-s-k-r-osipova-itog1-заказ';
+import IISKROsipovaItog1ОтпускМатериалаModel from './models/i-i-s-k-r-osipova-itog1-отпуск-материала';
+import IISKROsipovaItog1СкладModel from './models/i-i-s-k-r-osipova-itog1-склад';
+import IISKROsipovaItog1СотрудникиModel from './models/i-i-s-k-r-osipova-itog1-сотрудники';
+import IISKROsipovaItog1ТНModel from './models/i-i-s-k-r-osipova-itog1-т-н';
+import IISKROsipovaItog1ТЧАктаПриемкиModel from './models/i-i-s-k-r-osipova-itog1-т-ч-акта-приемки';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -34,7 +55,14 @@ $.extend(true, translations, {
     'i-i-s-k-r-osipova-itog-склад': IISKROsipovaItogСкладModel,
     'i-i-s-k-r-osipova-itog-сотрудники': IISKROsipovaItogСотрудникиModel,
     'i-i-s-k-r-osipova-itog-т-н': IISKROsipovaItogТНModel,
-    'i-i-s-k-r-osipova-itog-т-ч-акта-приемки': IISKROsipovaItogТЧАктаПриемкиModel
+    'i-i-s-k-r-osipova-itog-т-ч-акта-приемки': IISKROsipovaItogТЧАктаПриемкиModel,
+    'i-i-s-k-r-osipova-itog1-акт-приемки': IISKROsipovaItog1АктПриемкиModel,
+    'i-i-s-k-r-osipova-itog1-заказ': IISKROsipovaItog1ЗаказModel,
+    'i-i-s-k-r-osipova-itog1-отпуск-материала': IISKROsipovaItog1ОтпускМатериалаModel,
+    'i-i-s-k-r-osipova-itog1-склад': IISKROsipovaItog1СкладModel,
+    'i-i-s-k-r-osipova-itog1-сотрудники': IISKROsipovaItog1СотрудникиModel,
+    'i-i-s-k-r-osipova-itog1-т-н': IISKROsipovaItog1ТНModel,
+    'i-i-s-k-r-osipova-itog1-т-ч-акта-приемки': IISKROsipovaItog1ТЧАктаПриемкиModel
   },
 
   'application-name': 'K r osipova itog',
@@ -103,6 +131,14 @@ $.extend(true, translations, {
         'основные-справочники': {
           caption: 'Основные справочники',
           title: 'Основные справочники',
+          'i-i-s-k-r-osipova-itog1-отпуск-материала-l': {
+            caption: 'Отпуск материала',
+            title: ''
+          },
+          'i-i-s-k-r-osipova-itog1-акт-приемки-l': {
+            caption: 'Акт приемки',
+            title: ''
+          },
           'i-i-s-k-r-osipova-itog-отпуск-материала-l': {
             caption: 'Отпуск материала',
             title: ''
@@ -115,6 +151,26 @@ $.extend(true, translations, {
         'второстепенные-справочники': {
           caption: 'Второстепенные справочники',
           title: 'Второстепенные справочники',
+          'i-i-s-k-r-osipova-itog1-склад-l': {
+            caption: 'Склад',
+            title: ''
+          },
+          'i-i-s-k-r-osipova-itog1-сотрудники-l': {
+            caption: 'Сотрудники',
+            title: ''
+          },
+          'i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l': {
+            caption: 'Т ч акта приемки',
+            title: ''
+          },
+          'i-i-s-k-r-osipova-itog1-заказ-l': {
+            caption: 'Заказ',
+            title: ''
+          },
+          'i-i-s-k-r-osipova-itog1-т-н-l': {
+            caption: 'ТН',
+            title: ''
+          },
           'i-i-s-k-r-osipova-itog-склад-l': {
             caption: 'Склад',
             title: ''
@@ -154,13 +210,27 @@ $.extend(true, translations, {
     'i-i-s-k-r-osipova-itog-сотрудники-l': IISKROsipovaItogСотрудникиLForm,
     'i-i-s-k-r-osipova-itog-т-н-l': IISKROsipovaItogТНLForm,
     'i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l': IISKROsipovaItogТЧАктаПриемкиLForm,
+    'i-i-s-k-r-osipova-itog1-акт-приемки-l': IISKROsipovaItog1АктПриемкиLForm,
+    'i-i-s-k-r-osipova-itog1-заказ-l': IISKROsipovaItog1ЗаказLForm,
+    'i-i-s-k-r-osipova-itog1-отпуск-материала-l': IISKROsipovaItog1ОтпускМатериалаLForm,
+    'i-i-s-k-r-osipova-itog1-склад-l': IISKROsipovaItog1СкладLForm,
+    'i-i-s-k-r-osipova-itog1-сотрудники-l': IISKROsipovaItog1СотрудникиLForm,
+    'i-i-s-k-r-osipova-itog1-т-н-l': IISKROsipovaItog1ТНLForm,
+    'i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l': IISKROsipovaItog1ТЧАктаПриемкиLForm,
     'i-i-s-k-r-osipova-itog-акт-приемки-e': IISKROsipovaItogАктПриемкиEForm,
     'i-i-s-k-r-osipova-itog-заказ-e': IISKROsipovaItogЗаказEForm,
     'i-i-s-k-r-osipova-itog-отпуск-материала-e': IISKROsipovaItogОтпускМатериалаEForm,
     'i-i-s-k-r-osipova-itog-склад-e': IISKROsipovaItogСкладEForm,
     'i-i-s-k-r-osipova-itog-сотрудники-e': IISKROsipovaItogСотрудникиEForm,
     'i-i-s-k-r-osipova-itog-т-н-e': IISKROsipovaItogТНEForm,
-    'i-i-s-k-r-osipova-itog-т-ч-акта-приемки-e': IISKROsipovaItogТЧАктаПриемкиEForm
+    'i-i-s-k-r-osipova-itog-т-ч-акта-приемки-e': IISKROsipovaItogТЧАктаПриемкиEForm,
+    'i-i-s-k-r-osipova-itog1-акт-приемки-e': IISKROsipovaItog1АктПриемкиEForm,
+    'i-i-s-k-r-osipova-itog1-заказ-e': IISKROsipovaItog1ЗаказEForm,
+    'i-i-s-k-r-osipova-itog1-отпуск-материала-e': IISKROsipovaItog1ОтпускМатериалаEForm,
+    'i-i-s-k-r-osipova-itog1-склад-e': IISKROsipovaItog1СкладEForm,
+    'i-i-s-k-r-osipova-itog1-сотрудники-e': IISKROsipovaItog1СотрудникиEForm,
+    'i-i-s-k-r-osipova-itog1-т-н-e': IISKROsipovaItog1ТНEForm,
+    'i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-e': IISKROsipovaItog1ТЧАктаПриемкиEForm
   },
 
 });

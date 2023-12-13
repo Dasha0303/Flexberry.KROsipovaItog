@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "ТН",
+  "name": "IISKROsipovaItog1ТНE",
+  "className": "ТНE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog1-т-н",
+      "modelProjection": "ТНE"
+    }
+  ]
+}

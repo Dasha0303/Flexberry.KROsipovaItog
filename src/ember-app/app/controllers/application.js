@@ -25,16 +25,16 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.основные-справочники.caption'),
           title: i18n.t('forms.application.sitemap.основные-справочники.title'),
           children: [{
-            link: 'i-i-s-k-r-osipova-itog-отпуск-материала-l',
-            caption: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-отпуск-материала-l.caption'),
-            title: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-отпуск-материала-l.title'),
-            icon: 'folder',
+            link: 'i-i-s-k-r-osipova-itog1-отпуск-материала-l',
+            caption: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog1-отпуск-материала-l.caption'),
+            title: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog1-отпуск-материала-l.title'),
+            icon: 'folder open',
             children: null
           }, {
-            link: 'i-i-s-k-r-osipova-itog-акт-приемки-l',
-            caption: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-акт-приемки-l.caption'),
-            title: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-акт-приемки-l.title'),
-            icon: 'building',
+            link: 'i-i-s-k-r-osipova-itog1-акт-приемки-l',
+            caption: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog1-акт-приемки-l.caption'),
+            title: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog1-акт-приемки-l.title'),
+            icon: 'suitcase',
             children: null
           }]
         }, {
@@ -43,33 +43,33 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.второстепенные-справочники.caption'),
           title: i18n.t('forms.application.sitemap.второстепенные-справочники.title'),
           children: [{
-            link: 'i-i-s-k-r-osipova-itog-склад-l',
-            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-склад-l.caption'),
-            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-склад-l.title'),
-            icon: 'paperclip',
+            link: 'i-i-s-k-r-osipova-itog1-склад-l',
+            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-склад-l.caption'),
+            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-склад-l.title'),
+            icon: 'briefcase',
             children: null
           }, {
-            link: 'i-i-s-k-r-osipova-itog-сотрудники-l',
-            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-сотрудники-l.caption'),
-            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-сотрудники-l.title'),
-            icon: 'phone',
+            link: 'i-i-s-k-r-osipova-itog1-сотрудники-l',
+            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-сотрудники-l.caption'),
+            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-сотрудники-l.title'),
+            icon: 'archive',
             children: null
           }, {
-            link: 'i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l',
-            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l.caption'),
-            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l.title'),
-            icon: 'table',
+            link: 'i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l',
+            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l.caption'),
+            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l.title'),
+            icon: 'file',
             children: null
           }, {
-            link: 'i-i-s-k-r-osipova-itog-заказ-l',
-            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-заказ-l.caption'),
-            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-заказ-l.title'),
-            icon: 'tasks',
+            link: 'i-i-s-k-r-osipova-itog1-заказ-l',
+            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-заказ-l.caption'),
+            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-заказ-l.title'),
+            icon: 'suitcase',
             children: null
           }, {
-            link: 'i-i-s-k-r-osipova-itog-т-н-l',
-            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-н-l.caption'),
-            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-н-l.title'),
+            link: 'i-i-s-k-r-osipova-itog1-т-н-l',
+            caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-т-н-l.caption'),
+            title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog1-т-н-l.title'),
             icon: 'table',
             children: null
           }]

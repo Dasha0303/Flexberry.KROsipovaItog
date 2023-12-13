@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISKROsipovaItog1СотрудникиE",
+  "className": "СотрудникиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog1-сотрудники",
+      "modelProjection": "СотрудникиE"
+    }
+  ]
+}

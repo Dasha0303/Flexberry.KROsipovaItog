@@ -9,14 +9,14 @@
       "title": "Основные справочники",
       "children": [
         {
-          "link": "i-i-s-k-r-osipova-itog-отпуск-материала-l",
+          "link": "i-i-s-k-r-osipova-itog1-отпуск-материала-l",
           "menuName": null,
           "caption": "Отпуск материала",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-k-r-osipova-itog-акт-приемки-l",
+          "link": "i-i-s-k-r-osipova-itog1-акт-приемки-l",
           "menuName": null,
           "caption": "Акт приемки",
           "title": "",
@@ -31,35 +31,35 @@
       "title": "Второстепенные справочники",
       "children": [
         {
-          "link": "i-i-s-k-r-osipova-itog-склад-l",
+          "link": "i-i-s-k-r-osipova-itog1-склад-l",
           "menuName": null,
           "caption": "Склад",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-k-r-osipova-itog-сотрудники-l",
+          "link": "i-i-s-k-r-osipova-itog1-сотрудники-l",
           "menuName": null,
           "caption": "Сотрудники",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l",
+          "link": "i-i-s-k-r-osipova-itog1-т-ч-акта-приемки-l",
           "menuName": null,
           "caption": "Т ч акта приемки",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-k-r-osipova-itog-заказ-l",
+          "link": "i-i-s-k-r-osipova-itog1-заказ-l",
           "menuName": null,
           "caption": "Заказ",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-k-r-osipova-itog-т-н-l",
+          "link": "i-i-s-k-r-osipova-itog1-т-н-l",
           "menuName": null,
           "caption": "ТН",
           "title": "",

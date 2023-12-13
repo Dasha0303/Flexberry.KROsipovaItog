@@ -21,17 +21,17 @@ RUN \
 
 FROM mono:latest as backend
 
-COPY /src/KROsipovaItog /src/KROsipovaItog
+COPY /src/KROsipovaItog1 /src/KROsipovaItog1
 
 RUN \
- cd /src/KROsipovaItog ;\
- nuget restore KROsipovaItog.sln; \
- msbuild /p:Configuration=Release KROsipovaItog.sln
+ cd /src/KROsipovaItog1 ;\
+ nuget restore KROsipovaItog1.sln; \
+ msbuild /p:Configuration=Release KROsipovaItog1.sln
 
 FROM flexberry/mono-xsp:latest
 
 MAINTAINER mail@flexberry.net
 
-COPY --from=backend /src/KROsipovaItog/ODataBackend /app
+COPY --from=backend /src/KROsipovaItog1/ODataBackend /app
 COPY --from=ember_app /src/ember-app/dist /app
 WORKDIR /app

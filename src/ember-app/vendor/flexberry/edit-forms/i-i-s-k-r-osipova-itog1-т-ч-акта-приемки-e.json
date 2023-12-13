@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Склад",
+      "projection": "СкладL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТН",
+      "projection": "ТНL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Т ч акта приемки",
+  "name": "IISKROsipovaItog1ТЧАктаПриемкиE",
+  "className": "ТЧАктаПриемкиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog1-т-ч-акта-приемки",
+      "modelProjection": "ТЧАктаПриемкиE"
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-docker-compose -p krosipovaitog up -d
+docker-compose -p krosipovaitog1 up -d

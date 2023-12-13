@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISKROsipovaItog1Склад",
+  "modelName": "i-i-s-k-r-osipova-itog1-склад",
+  "className": "Склад",
+  "nameSpace": "IIS.KROsipovaItog1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имяСклада",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодСклада",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СкладE",
+      "modelName": "i-i-s-k-r-osipova-itog1-склад",
+      "attrs": [
+        {
+          "name": "имяСклада",
+          "caption": "Имя склада",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кодСклада",
+          "caption": "Код склада",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СкладL",
+      "modelName": "i-i-s-k-r-osipova-itog1-склад",
+      "attrs": [
+        {
+          "name": "имяСклада",
+          "caption": "Имя склада",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кодСклада",
+          "caption": "Код склада",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

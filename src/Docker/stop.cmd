@@ -1,1 +1,1 @@
-docker-compose -p krosipovaitog down
+docker-compose -p krosipovaitog1 down

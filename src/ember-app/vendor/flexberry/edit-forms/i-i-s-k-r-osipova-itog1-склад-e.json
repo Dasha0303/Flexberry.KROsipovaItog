@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Склад",
+  "name": "IISKROsipovaItog1СкладE",
+  "className": "СкладE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog1-склад",
+      "modelProjection": "СкладE"
+    }
+  ]
+}
