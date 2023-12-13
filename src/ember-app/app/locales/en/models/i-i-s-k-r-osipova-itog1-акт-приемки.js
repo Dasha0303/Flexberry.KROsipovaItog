@@ -1,8 +1,20 @@
 export default {
   projections: {
     АктПриемкиE: {
+      датаПриемки: {
+        __caption__: ''
+      },
+      номерАкта: {
+        __caption__: ''
+      }
     },
     АктПриемкиL: {
+      датаПриемки: {
+        __caption__: ''
+      },
+      номерАкта: {
+        __caption__: ''
+      }
     }
   },
   validations: {

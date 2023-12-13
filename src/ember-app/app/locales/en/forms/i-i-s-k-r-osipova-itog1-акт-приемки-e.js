@@ -1,3 +1,5 @@
 export default {
-  caption: 'Акт приемки'
+  caption: 'Акт приемки',
+  'датаПриемки-caption': '',
+  'номерАкта-caption': ''
 };

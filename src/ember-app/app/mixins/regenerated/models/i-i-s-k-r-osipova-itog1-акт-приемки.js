@@ -51,10 +51,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('АктПриемкиE', 'i-i-s-k-r-osipova-itog1-акт-приемки', {
-    
+    датаПриемки: attr('', { index: 0 }),
+    номерАкта: attr('', { index: 1 })
   });
 
   modelClass.defineProjection('АктПриемкиL', 'i-i-s-k-r-osipova-itog1-акт-приемки', {
-    
+    датаПриемки: attr('', { index: 0 }),
+    номерАкта: attr('', { index: 1 })
   });
 };

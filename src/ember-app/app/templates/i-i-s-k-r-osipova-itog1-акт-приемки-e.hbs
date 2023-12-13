@@ -24,5 +24,24 @@
       {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
     </div>
   </div>
-
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.датаПриемки
+      class=(if (v-get validationModel "датаПриемки" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog1-акт-приемки-e.датаПриемки-caption")
+      data-test-i-i-s-k-r-osipova-itog1-акт-приемки-e-датаПриемки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаПриемки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерАкта
+      class=(if (v-get validationModel "номерАкта" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog1-акт-приемки-e.номерАкта-caption")
+      data-test-i-i-s-k-r-osipova-itog1-акт-приемки-e-номерАкта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерАкта" "message")}}
+  </div>
 </form>

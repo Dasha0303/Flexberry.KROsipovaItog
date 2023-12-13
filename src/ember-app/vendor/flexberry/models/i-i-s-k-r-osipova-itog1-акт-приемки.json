@@ -53,14 +53,40 @@
     {
       "name": "АктПриемкиE",
       "modelName": "i-i-s-k-r-osipova-itog1-акт-приемки",
-      "attrs": [],
+      "attrs": [
+        {
+          "name": "датаПриемки",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерАкта",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        }
+      ],
       "belongsTo": [],
       "hasMany": []
     },
     {
       "name": "АктПриемкиL",
       "modelName": "i-i-s-k-r-osipova-itog1-акт-приемки",
-      "attrs": [],
+      "attrs": [
+        {
+          "name": "датаПриемки",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерАкта",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        }
+      ],
       "belongsTo": [],
       "hasMany": []
     }
