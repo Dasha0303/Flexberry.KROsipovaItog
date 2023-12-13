@@ -76,19 +76,13 @@
           "hidden": false,
           "attrs": [
             {
-              "name": "должность",
+              "name": "табель",
               "caption": "",
               "hidden": false,
               "index": 2
-            },
-            {
-              "name": "фИО",
-              "caption": "",
-              "hidden": false,
-              "index": 3
             }
           ],
-          "index": -1,
+          "index": 3,
           "type": "default",
           "caption": "",
           "name": "сотрудники",
@@ -103,19 +97,25 @@
           "hidden": false,
           "attrs": [
             {
-              "name": "номерТН",
+              "name": "колво",
               "caption": "",
               "hidden": false,
               "index": 4
             },
             {
-              "name": "поставщик",
+              "name": "материал",
               "caption": "",
               "hidden": false,
               "index": 5
+            },
+            {
+              "name": "номерТС",
+              "caption": "",
+              "hidden": false,
+              "index": 6
             }
           ],
-          "index": -1,
+          "index": 7,
           "type": "default",
           "caption": "",
           "name": "тН",
@@ -130,18 +130,12 @@
             {
               "lookupValue": null,
               "lookupValueField": null,
-              "relationName": "ТЧАктаПриемки.ТН",
+              "relationName": "ТЧАктаПриемки.Склад",
               "belongsTo": [],
               "hidden": false,
               "attrs": [
                 {
-                  "name": "материал",
-                  "caption": "",
-                  "hidden": false,
-                  "index": 7
-                },
-                {
-                  "name": "колво",
+                  "name": "кодСклада",
                   "caption": "",
                   "hidden": false,
                   "index": 8
@@ -150,41 +144,46 @@
               "index": -1,
               "type": null,
               "caption": "",
-              "name": "тН",
-              "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+              "name": "склад",
+              "relatedTo": "i-i-s-k-r-osipova-itog-склад",
               "inverse": null
             },
             {
               "lookupValue": null,
               "lookupValueField": null,
-              "relationName": "ТЧАктаПриемки.Склад",
+              "relationName": "ТЧАктаПриемки.ТН",
               "belongsTo": [],
               "hidden": false,
               "attrs": [
                 {
-                  "name": "имяСклада",
+                  "name": "номерТН",
                   "caption": "",
                   "hidden": false,
                   "index": 9
+                },
+                {
+                  "name": "номерТС",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 10
+                },
+                {
+                  "name": "поставщик",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 11
                 }
               ],
               "index": -1,
               "type": null,
               "caption": "",
-              "name": "склад",
-              "relatedTo": "i-i-s-k-r-osipova-itog-склад",
+              "name": "тН",
+              "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
               "inverse": null
             }
           ],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "номерПозиции",
-              "caption": "",
-              "hidden": false,
-              "index": 6
-            }
-          ],
+          "attrs": [],
           "index": -1,
           "type": "default",
           "caption": "",

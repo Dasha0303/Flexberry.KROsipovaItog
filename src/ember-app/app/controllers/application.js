@@ -28,6 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-k-r-osipova-itog-отпуск-материала-l',
             caption: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-отпуск-материала-l.caption'),
             title: i18n.t('forms.application.sitemap.основные-справочники.i-i-s-k-r-osipova-itog-отпуск-материала-l.title'),
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-k-r-osipova-itog-акт-приемки-l',
@@ -45,31 +46,31 @@ export default Controller.extend({
             link: 'i-i-s-k-r-osipova-itog-склад-l',
             caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-склад-l.caption'),
             title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-склад-l.title'),
-            icon: 'archive',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-k-r-osipova-itog-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-сотрудники-l.title'),
-            icon: 'folder open',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l',
             caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l.caption'),
             title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-ч-акта-приемки-l.title'),
-            icon: 'book',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-k-r-osipova-itog-заказ-l',
             caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-заказ-l.title'),
-            icon: 'tags',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-k-r-osipova-itog-т-н-l',
             caption: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-н-l.caption'),
             title: i18n.t('forms.application.sitemap.второстепенные-справочники.i-i-s-k-r-osipova-itog-т-н-l.title'),
-            icon: 'archive',
+            icon: 'file',
             children: null
           }]
         }
