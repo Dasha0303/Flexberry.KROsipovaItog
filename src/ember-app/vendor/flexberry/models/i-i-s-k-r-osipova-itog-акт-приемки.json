@@ -1,0 +1,347 @@
+﻿{
+  "name": "IISKROsipovaItogАктПриемки",
+  "modelName": "i-i-s-k-r-osipova-itog-акт-приемки",
+  "className": "АктПриемки",
+  "nameSpace": "IIS.KROsipovaItog",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПриемки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерАкта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-k-r-osipova-itog-сотрудники",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тН",
+      "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧАктаПриемки",
+      "relatedTo": "i-i-s-k-r-osipova-itog-т-ч-акта-приемки",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АктПриемкиE",
+      "modelName": "i-i-s-k-r-osipova-itog-акт-приемки",
+      "attrs": [
+        {
+          "name": "номерАкта",
+          "caption": "Номер акта",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаПриемки",
+          "caption": "Дата приемки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "фИО",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-k-r-osipova-itog-сотрудники",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТН",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерТН",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "поставщик",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "тН",
+          "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧАктаПриемки.ТН",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "материал",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 7
+                },
+                {
+                  "name": "колво",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 8
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "тН",
+              "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧАктаПриемки.Склад",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "имяСклада",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 9
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "склад",
+              "relatedTo": "i-i-s-k-r-osipova-itog-склад",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-k-r-osipova-itog-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "АктПриемкиL",
+      "modelName": "i-i-s-k-r-osipova-itog-акт-приемки",
+      "attrs": [
+        {
+          "name": "номерАкта",
+          "caption": "Номер акта",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаПриемки",
+          "caption": "Дата приемки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "должность",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-k-r-osipova-itog-сотрудники",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТН",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерТН",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "поставщик",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "тН",
+          "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧАктаПриемки.ТН",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "материал",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 7
+                },
+                {
+                  "name": "колво",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 8
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "тН",
+              "relatedTo": "i-i-s-k-r-osipova-itog-т-н",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧАктаПриемки.Склад",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "имяСклада",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 9
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "склад",
+              "relatedTo": "i-i-s-k-r-osipova-itog-склад",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-k-r-osipova-itog-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

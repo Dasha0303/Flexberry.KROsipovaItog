@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-osipova-itog-сотрудники-e",
+  "editForm": "i-i-s-k-r-osipova-itog-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISKROsipovaItogСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

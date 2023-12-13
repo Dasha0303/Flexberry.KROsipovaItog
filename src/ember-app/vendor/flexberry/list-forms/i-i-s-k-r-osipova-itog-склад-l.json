@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-osipova-itog-склад-e",
+  "editForm": "i-i-s-k-r-osipova-itog-склад-e",
+  "external": false,
+  "caption": "Склад",
+  "name": "IISKROsipovaItogСкладL",
+  "className": "СкладL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog-склад",
+      "modelProjection": "СкладL"
+    }
+  ]
+}

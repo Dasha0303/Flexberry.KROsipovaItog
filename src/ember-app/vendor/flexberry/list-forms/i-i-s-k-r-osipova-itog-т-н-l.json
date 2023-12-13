@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-osipova-itog-т-н-e",
+  "editForm": "i-i-s-k-r-osipova-itog-т-н-e",
+  "external": false,
+  "caption": "ТН",
+  "name": "IISKROsipovaItogТНL",
+  "className": "ТНL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog-т-н",
+      "modelProjection": "ТНL"
+    }
+  ]
+}

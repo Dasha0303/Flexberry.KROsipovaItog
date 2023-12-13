@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISKROsipovaItogЗаказE",
+  "className": "ЗаказE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-osipova-itog-заказ",
+      "modelProjection": "ЗаказE"
+    }
+  ]
+}

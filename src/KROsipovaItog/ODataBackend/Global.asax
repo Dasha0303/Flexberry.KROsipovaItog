@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="IIS.KROsipovaItog.Global" Language="C#" %>

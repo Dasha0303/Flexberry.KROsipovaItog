@@ -1,0 +1,127 @@
+<h3 class="ui header">{{t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерАкта
+      class=(if (v-get validationModel "номерАкта" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.номерАкта-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-номерАкта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерАкта" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.датаПриемки
+      class=(if (v-get validationModel "датаПриемки" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.датаПриемки-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-датаПриемки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаПриемки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудники.должность
+      class=(if (v-get validationModel.сотрудники "должность" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.сотрудники.должность-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-сотрудники-должность=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники "должность" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудники.фИО
+      class=(if (v-get validationModel.сотрудники "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.сотрудники.фИО-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-сотрудники-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тН.номерТН
+      class=(if (v-get validationModel.тН "номерТН" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тН.номерТН-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тН-номерТН=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тН "номерТН" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тН.поставщик
+      class=(if (v-get validationModel.тН "поставщик" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тН.поставщик-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тН-поставщик=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тН "поставщик" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тЧАктаПриемки.номерПозиции
+      class=(if (v-get validationModel.тЧАктаПриемки "номерПозиции" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тЧАктаПриемки.номерПозиции-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тЧАктаПриемки-номерПозиции=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тЧАктаПриемки "номерПозиции" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тЧАктаПриемки.тН.материал
+      class=(if (v-get validationModel.тЧАктаПриемки.тН "материал" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тЧАктаПриемки.тН.материал-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тЧАктаПриемки-тН-материал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тЧАктаПриемки.тН "материал" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тЧАктаПриемки.тН.колво
+      class=(if (v-get validationModel.тЧАктаПриемки.тН "колво" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тЧАктаПриемки.тН.колво-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тЧАктаПриемки-тН-колво=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тЧАктаПриемки.тН "колво" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.тЧАктаПриемки.склад.имяСклада
+      class=(if (v-get validationModel.тЧАктаПриемки.склад "имяСклада" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-osipova-itog-акт-приемки-e.тЧАктаПриемки.склад.имяСклада-caption")
+      data-test-i-i-s-k-r-osipova-itog-акт-приемки-e-тЧАктаПриемки-склад-имяСклада=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.тЧАктаПриемки.склад "имяСклада" "message")}}
+  </div>
+</form>
