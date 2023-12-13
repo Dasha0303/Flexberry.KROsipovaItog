@@ -51,48 +51,10 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('АктПриемкиE', 'i-i-s-k-r-osipova-itog-акт-приемки', {
-    номерАкта: attr('Номер акта', { index: 0 }),
-    датаПриемки: attr('Дата приемки', { index: 1 }),
-    сотрудники: belongsTo('i-i-s-k-r-osipova-itog-сотрудники', '', {
-      табель: attr('', { index: 2 })
-    }, { index: 3 }),
-    тН: belongsTo('i-i-s-k-r-osipova-itog-т-н', '', {
-      колво: attr('', { index: 4 }),
-      материал: attr('', { index: 5 }),
-      номерТС: attr('', { index: 6 })
-    }, { index: 7 }),
-    тЧАктаПриемки: belongsTo('i-i-s-k-r-osipova-itog-т-ч-акта-приемки', '', {
-      склад: belongsTo('i-i-s-k-r-osipova-itog-склад', '', {
-        кодСклада: attr('', { index: 8 })
-      }, { index: -1, hidden: true }),
-      тН: belongsTo('i-i-s-k-r-osipova-itog-т-н', '', {
-        номерТН: attr('', { index: 9 }),
-        номерТС: attr('', { index: 10 }),
-        поставщик: attr('', { index: 11 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true })
+    
   });
 
   modelClass.defineProjection('АктПриемкиL', 'i-i-s-k-r-osipova-itog-акт-приемки', {
-    номерАкта: attr('Номер акта', { index: 0 }),
-    датаПриемки: attr('Дата приемки', { index: 1 }),
-    сотрудники: belongsTo('i-i-s-k-r-osipova-itog-сотрудники', '', {
-      фИО: attr('', { index: 2 }),
-      должность: attr('', { index: 3 })
-    }, { index: -1, hidden: true }),
-    тН: belongsTo('i-i-s-k-r-osipova-itog-т-н', '', {
-      номерТН: attr('', { index: 4 }),
-      поставщик: attr('', { index: 5 })
-    }, { index: -1, hidden: true }),
-    тЧАктаПриемки: belongsTo('i-i-s-k-r-osipova-itog-т-ч-акта-приемки', '', {
-      номерПозиции: attr('', { index: 6 }),
-      тН: belongsTo('i-i-s-k-r-osipova-itog-т-н', '', {
-        материал: attr('', { index: 7 }),
-        колво: attr('', { index: 8 })
-      }, { index: -1, hidden: true }),
-      склад: belongsTo('i-i-s-k-r-osipova-itog-склад', '', {
-        имяСклада: attr('', { index: 9 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true })
+    
   });
 };
